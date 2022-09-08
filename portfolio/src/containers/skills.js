@@ -76,7 +76,201 @@ const Skills = () => {
                 <Divider />
               </Grid>
 
-              <Grid item xs={12}>
+              {/* Only on Mobile */}
+              <Grid item xs={12} sx={{ display: { xs: "block", sm: "none" } }}>
+                <Grid container spacing={2}>
+                  {/* Education */}
+                  <Grid item xs={12}>
+                    <Card>
+                      <CardContent>
+                        <Grid container>
+                          <Grid item lg={3}>
+                            <Typography variant="h4" color="#c62d70">
+                              Education
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                        <Divider sx={{ marginBottom: "20px" }} />
+                        <Grid container spacing={2}>
+                          {educationData.map((ele) => {
+                            return (
+                              <Grid item xs={12}>
+                                <Card>
+                                  <CardContent>
+                                    <Grid container>
+                                      <Grid
+                                        item
+                                        xs={1}
+                                        sx={{
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          marginRight: "20px",
+                                        }}
+                                      >
+                                        <SchoolIcon fontSize="large" />
+                                      </Grid>
+                                      <Grid item xs={7}>
+                                        <Typography variant="h6">
+                                          {ele.title}
+                                        </Typography>
+                                        <Typography variant="subtitle2">
+                                          {ele.university}
+                                        </Typography>
+                                      </Grid>
+                                      <Grid
+                                        item
+                                        xs={3}
+                                        sx={{
+                                          display: "flex",
+                                          justifyContent: "end",
+                                          alignItems: "center",
+                                        }}
+                                      >
+                                        <Typography>GPA: {ele.gpa}</Typography>
+                                      </Grid>
+                                    </Grid>
+                                  </CardContent>
+                                </Card>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+
+                  {/* Tools and technology */}
+                  <Grid item xs={12}>
+                    <Card>
+                      <CardContent>
+                        <Grid container>
+                          <Grid item lg={3}>
+                            <Typography variant="h4" color="#c62d70">
+                              Tools and Technology
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                        <Divider sx={{ marginBottom: "20px" }} />
+                        <Grid container spacing={4}>
+                          <Grid item xs={12}>
+                            <Typography variant="h6">
+                              Languages and Frameworks
+                            </Typography>
+                            <Divider />
+                            <Grid container spacing={2} marginTop={2}>
+                              {toolsData.languages.map((ele) => {
+                                return (
+                                  <Grid item xs={6} md={3} lg={3}>
+                                    <Item className="skills__tools">{ele}</Item>
+                                  </Grid>
+                                );
+                              })}
+                            </Grid>
+                          </Grid>
+
+                          <Grid item xs={12}>
+                            <Typography variant="h6">Libraries</Typography>
+                            <Divider />
+                            <Grid container spacing={2} marginTop={2}>
+                              {toolsData.libraries.map((ele) => {
+                                return (
+                                  <Grid item xs={6} md={3} lg={3}>
+                                    <Item className="skills__tools">{ele}</Item>
+                                  </Grid>
+                                );
+                              })}
+                            </Grid>
+                          </Grid>
+                          <Grid item xs={12}>
+                            <Typography variant="h6">
+                              Database and Query Languages
+                            </Typography>
+                            <Divider />
+                            <Grid container spacing={2} marginTop={2}>
+                              {toolsData.databases.map((ele) => {
+                                return (
+                                  <Grid item xs={6} md={3} lg={3}>
+                                    <Item className="skills__tools">{ele}</Item>
+                                  </Grid>
+                                );
+                              })}
+                            </Grid>
+                          </Grid>
+                          <Grid item xs={12}>
+                            <Typography variant="h6">
+                              Version Control
+                            </Typography>
+                            <Divider />
+                            <Grid container spacing={2} marginTop={2}>
+                              {toolsData.libraries.map((ele) => {
+                                return (
+                                  <Grid item xs={6} md={3} lg={3}>
+                                    <Item className="skills__tools">{ele}</Item>
+                                  </Grid>
+                                );
+                              })}
+                            </Grid>
+                          </Grid>
+                        </Grid>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+
+                  {/* Certifications */}
+                  <Grid item xs={12}>
+                    <Card>
+                      <CardContent>
+                        <Grid container>
+                          <Grid item lg={3}>
+                            <Typography variant="h4" color="#c62d70">
+                              Certifications
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                        <Divider sx={{ marginBottom: "20px" }} />
+                        <Grid container spacing={2}>
+                          {certificationsData.map((ele) => {
+                            return (
+                              <Grid item xs={12} key={ele.id}>
+                                <Card>
+                                  <CardContent>
+                                    <Grid container>
+                                      <Grid
+                                        item
+                                        xs={1}
+                                        sx={{
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          marginRight: "20px",
+                                        }}
+                                      >
+                                        <WorkspacePremiumIcon fontSize="large" />
+                                      </Grid>
+                                      <Grid item xs={7}>
+                                        <Typography variant="h6">
+                                          {ele.title}
+                                        </Typography>
+                                        <Typography variant="subtitle2">
+                                          {ele.org}
+                                        </Typography>
+                                      </Grid>
+                                    </Grid>
+                                  </CardContent>
+                                </Card>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Grid>
+
+              {/* Only on Destop */}
+              <Grid item xs={12} sx={{ display: { xs: "none", sm: "block" } }}>
                 <AppBar position="static">
                   <Tabs
                     value={value}
