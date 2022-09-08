@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { PersistGate } from "redux-persist/integration/react";
 import DialogBoxProvider from "./components/dialog-box/dialog-box";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
