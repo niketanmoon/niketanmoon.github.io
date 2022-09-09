@@ -130,7 +130,7 @@ const About = () => {
                       He likes to talk about anything related to{" "}
                       <b>
                         Artificial Intelligence, Machine Learning, building
-                        products and in general about Entrepreneurship{" "}
+                        products and in general about Entrepreneurship
                       </b>
                       . If you have some cool ideas or working on some
                       interesting open source projects, where you can
