@@ -43,11 +43,10 @@ const About = () => {
                   <Grid item lg={12}>
                     <Typography variant="body">
                       He did his Bachelors in{" "}
-                      <b>Computer Science and Engineering</b>
-                      and worked as a <b>Research Assitant</b> at{" "}
-                      <b>Nalanda Labs</b>. It is here, where he got to know all
-                      about arduino, raspi and played with sensors and built
-                      some cool prototypes.
+                      <b>Computer Science and Engineering</b> and worked as a{" "}
+                      <b>Research Assistant</b> at <b>Nalanda Labs</b>. It is
+                      here, where he got to know all about arduino, raspi and
+                      played with sensors and built some cool prototypes.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -131,7 +130,7 @@ const About = () => {
                       He likes to talk about anything related to{" "}
                       <b>
                         Artificial Intelligence, Machine Learning, building
-                        products and in general about Entreprenurship{" "}
+                        products and in general about Entrepreneurship{" "}
                       </b>
                       . If you have some cool ideas or working on some
                       interesting open source projects, where you can
