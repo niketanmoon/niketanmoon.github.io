@@ -12,6 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Header from "../header/header";
 import appRoutes from "../../router/app-routes";
 import { NavLink, useLocation } from "react-router-dom";
+import useScreenType from "react-screentype-hook";
 import "./side-nav.css";
 
 const drawerWidth = 250;
@@ -50,6 +51,8 @@ export default function SideNavMenu({
   const classes = useStyles();
   const sideNavItems = appRoutes.filter((it) => it.isNavMenu);
   const entryPath = "";
+  const screenType = useScreenType();
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -110,6 +113,7 @@ export default function SideNavMenu({
                   : ""
               }`}
               selected={`${entryPath}${item.path}` === location.pathname}
+              onClick={screenType.isMobile ? handleSidebarToggle : undefined}
             >
               {(() => {
                 if (item.icon) {

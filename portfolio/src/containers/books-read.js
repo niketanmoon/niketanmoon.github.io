@@ -38,7 +38,7 @@ const Books = () => {
                     return (
                       <Grid
                         item
-                        xs={6}
+                        xs={12}
                         md={stateToggleStatus.toggleStatus ? 4 : 3}
                         lg={3}
                         key={ele.id}
@@ -46,8 +46,7 @@ const Books = () => {
                         <Card
                           sx={{
                             borderRadius: "20px",
-                            objectFit: "contain",
-                            // maxWidth: "300px",
+                            maxWidth: { xs: "100%", sm: "300px" },
                           }}
                         >
                           <CardMedia
@@ -55,7 +54,8 @@ const Books = () => {
                             image={ele.img_url}
                             alt={ele.name}
                             sx={{
-                              height: "385px",
+                              height: { xs: "100%", sm: "385px" },
+                              objectFit: "cover",
                             }}
                           />
                           {/* <CardContent>
