@@ -9,6 +9,9 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import InfoIcon from "@mui/icons-material/Info";
 import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 import MlBlogs from "../containers/ml-blogs";
+import Experience from "../containers/experience";
+import WorkIcon from "@mui/icons-material/Work";
+import ForumIcon from "@mui/icons-material/Forum";
 
 const appRoutes = [
   // {
@@ -36,6 +39,14 @@ const appRoutes = [
     icon: PsychologyIcon,
   },
   {
+    name: "Experience",
+    path: "/experience",
+    isNavMenu: true,
+    protected: true,
+    component: Experience,
+    icon: WorkIcon,
+  },
+  {
     name: "Projects",
     path: "/projects",
     isNavMenu: true,
@@ -52,12 +63,12 @@ const appRoutes = [
     icon: LibraryBooksIcon,
   },
   {
-    name: "ML Blogs",
-    path: "/ml-blogs",
+    name: "Blog",
+    path: "/blog",
     isNavMenu: true,
     protected: true,
     component: MlBlogs,
-    icon: LibraryBooksIcon,
+    icon: ForumIcon,
   },
 ];
 

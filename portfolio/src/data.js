@@ -193,3 +193,54 @@ export const toolsData = {
   databases: ["MySQL", "PostgreSQL", "Neo4j", "Cypher"],
   versionControl: ["Git", "SVN"],
 };
+
+export const workExperienceData = [
+  {
+    id: 1,
+    role: "Software Engineer",
+    company: "NCS",
+    description:
+      "Collaborated with 2 full stack developers to build frontend and backend for a machine learning product using Django and React. Exposed REST APIs using Django Rest Framework. Built authentication, domain and dashboard analytics in frontend and backend using React and Django.",
+    timeline: "Jun 2021 to Dec 2021",
+    location: "Pune, India",
+  },
+  {
+    id: 2,
+    role: "Software Engineer",
+    company: "Digiqt Technolabs",
+    description:
+      "Automated booking system via SMS and email. Redesigned the payment system, added new features like Loyalty rewards and coupons, increasing the booking ratio by 20%. Responsible for code reviews, code fixes and deploying code to production. Increased site traffic 30% by improving navigations, booking time and implemented site optimization techniques. Developed a compliance check SAAS platform with Django and deployed it on AWS server. Involved in developing android app for advocates and users using React Native and Django Rest Framework. Wrote cron jobs to scrape PDF according to daily court proceedings and alerting user and advocate for their case hearings. Mentored a team of 6 Software Engineer interns in developing technical skills.",
+    timeline: "Oct 2019 to Dec 2020",
+    location: "Ahmedabad, India",
+  },
+  {
+    id: 3,
+    role: "Research Assistant",
+    company: "Nalanda Labs",
+    description:
+      "Developed Face Recognition System to detect valid entry in the room for attendance with python, opencv. Researched and prototyped smart helmet to improve safety of bike riders. Mentored over 450 students for different IoT workshops with around 15 schools in India.",
+    timeline: "Apr 2018 to Oct 2019",
+    location: "Wardha, India",
+  },
+];
+
+export const academicProjects = [
+  {
+    id: 1,
+    name: "Sentimental Analysis",
+    description:
+      "Applied Naive Bayes classification algorithm from scratch to analyse the IMDB movie reviews and to output the sentiment for that movie. Improved performance of the model from F1 Score of 0.4378 to 0.5526 using K smoothing technique. Python; Numpy.",
+  },
+  {
+    id: 2,
+    name: "Question Retrieval System",
+    description:
+      "Implemented text matching algorithm using Inverted File Mapping with question retrieval probability for top 5 matches as 37%. Avearage sentence embedding algorithm was used to improve the performance from probability of 37% to 49%. To improve the performance again, applied down weight to frequent words while calculating sentence embeddings. This resulted in performance improvement from 49% to 54%. Python; Numpy.",
+  },
+  {
+    id: 3,
+    name: "Apriori and Association rules",
+    description:
+      "Implemented simple randomized algorithm for generating association rules for frequent itemsets with a confidence of 80%. Later applied SON algorithm on the same dataset to improve the algorithm by 30%. For instance, a chess dataset taken from frequent itemset mining repository generated 4474 rules for 10% of its data using Simple Randomized Algorithm but SON algorithm generated 1346 rules thus improving the algorithm by 30%.Python; Numpy.",
+  },
+];

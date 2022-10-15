@@ -11,7 +11,7 @@ const MlBlogs = () => {
               <Grid item xs={12}>
                 <Grid container>
                   <Grid item lg={3}>
-                    <Typography variant="h4">Machine Learning Blogs</Typography>
+                    <Typography variant="h4">Blog</Typography>
                   </Grid>
                 </Grid>
                 <Divider />
